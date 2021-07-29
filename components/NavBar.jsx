@@ -26,9 +26,18 @@ const navBtns = [
 ];
 
 const Logo = () => {
-    const logo = useColorModeValue("/logo.png", "/logo-dark.png");
+    const logo = useColorModeValue("/black.png", "/white.png");
     return (
-        <Box></Box>
+        <Box m={2}>
+            <img
+                alt="logo"
+                src={logo}
+                width={60}
+                height={60}
+                onClick={scroll.scrollToTop}
+                style={{padding: 10}}
+            />
+        </Box>
     );
 };
 
