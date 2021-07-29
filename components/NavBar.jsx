@@ -1,10 +1,26 @@
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerOverlay, IconButton, Link, Spacer, Stack, Tooltip, useColorMode, useColorModeValue, useDisclosure } from '@chakra-ui/react';
-import React from 'react';
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import {
+    Box,
+    Button,
+    Drawer,
+    DrawerBody,
+    DrawerContent,
+    DrawerOverlay,
+    IconButton,
+    Link,
+    Spacer,
+    Stack,
+    Tooltip,
+    useColorMode,
+    useColorModeValue,
+    useDisclosure,
+} from "@chakra-ui/react";
+import React from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { animateScroll as scroll, Link as ScrollLink } from 'react-scroll';
-import Sticky from 'react-stickynode';
-import { colors } from '../theme';
+import { animateScroll as scroll, Link as ScrollLink } from "react-scroll";
+import Sticky from "react-stickynode";
+
+import { colors } from "../theme";
 
 const navBtns = [
     {
@@ -35,7 +51,7 @@ const Logo = () => {
                 width={60}
                 height={60}
                 onClick={scroll.scrollToTop}
-                style={{padding: 10}}
+                style={{ padding: 10 }}
             />
         </Box>
     );
@@ -51,7 +67,13 @@ const MenuToggle = ({ isOpen, onOpen }) => (
 
 const NavButtons = ({ size, onClose }) => {
     const btns = navBtns.map((btn) => (
-        <Button key={btn.label} size={size} variant="link" mb={2} onClick={onClose}>
+        <Button
+            key={btn.label}
+            size={size}
+            variant="link"
+            mb={2}
+            onClick={onClose}
+        >
             {btn.href ? (
                 <Link href={btn.href} isExternal>
                     {btn.label}
@@ -85,7 +107,7 @@ const ColorModeButton = ({ mr }) => {
             label={`Toggle ${nextMode} mode`}
             aria-label={`Toggle ${nextMode} mode`}
         >
-            <IconButton 
+            <IconButton
                 size="md"
                 fontSize="lg"
                 aria-label={`Toggle ${nextMode} mode`}
@@ -134,7 +156,10 @@ const NavMenu = ({ isOpen, onClose }) => (
 );
 
 export default function NavBar() {
-    const primary = useColorModeValue(colors.primary.light, colors.primary.dark);
+    const primary = useColorModeValue(
+        colors.primary.light,
+        colors.primary.dark
+    );
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (
@@ -155,4 +180,4 @@ export default function NavBar() {
             </Stack>
         </Sticky>
     );
-};
+}
