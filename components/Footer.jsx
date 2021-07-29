@@ -1,5 +1,5 @@
 import { Box, Link, Stack, Text } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GoRepoForked, GoStar } from "react-icons/go";
 import { animateScroll as scroll } from "react-scroll";
 import LinkIconBar from './LinkIconBar';
@@ -10,6 +10,16 @@ const GITHUB_URL = 'https://github.com/Rahul5430/portfolio';
 export default function Footer() {
     const [forks, setForks] = useState(0);
     const [stars, setStars] = useState(0);
+
+    useEffect(() => {
+        fetch('https://api.github.com/repos/Rahul5430/portfolio')
+        .then((response) => response.json())
+        .then((data) => {
+            setForks(data.forks);
+            setStars(data.stargazers_count);
+        })
+        .catch((error) => console.log(error))
+    }, []);
     
     return (
         <Box as="footer" mt={12} height="100%" textAlign="center" className="app">
