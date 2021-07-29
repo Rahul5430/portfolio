@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import theme from "../theme";
 
 const SiteHead = ({ title }) => (
@@ -19,6 +20,7 @@ const PageWrapper = ({ children, title }) => (
     <SiteHead title={title} />
     <NavBar />
     <main className="main">{children}</main>
+    <Footer/>
   </div>
 );
 

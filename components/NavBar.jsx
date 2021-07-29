@@ -2,23 +2,27 @@ import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerOverlay, IconButton, Link, Spacer, Stack, Tooltip, useColorMode, useColorModeValue, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 import { FaMoon, FaSun } from "react-icons/fa";
-import { ScrollLink } from 'react-scroll';
+import { animateScroll as scroll, Link as ScrollLink } from 'react-scroll';
 import Sticky from 'react-stickynode';
 import { colors } from '../theme';
 
 const navBtns = [
     {
-        label: "About"
+        label: "About",
     },
     {
-        label: "Experience"
+        label: "Experience",
     },
     {
-        label: "Projects"
+        label: "Projects",
     },
     {
-        label: "Contact"
+        label: "Contact",
     },
+    // {
+    //     label: "Blog",
+    //     href: "https://jarrod-servilla.medium.com/",
+    // }
 ];
 
 const Logo = () => {
