@@ -25,12 +25,12 @@ const Bio = ({ secondary }) => (
                 I enjoy designing &amp; engineering{" "}
                 <strong style={{color: secondary}}>
                     efficient full stack and mobile applications
-                </strong>{" "}
+                </strong>
                 . I have a{" "}
                 <strong style={{color: secondary}}>
                     passion for coding
-                </strong>{" "}
-                . I enjoy contributing to
+                </strong>
+                . I enjoy contributing to{" "}
                 <strong style={{color: secondary}}>
                     Open Source Projects
                 </strong>{" "}

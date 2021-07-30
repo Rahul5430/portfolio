@@ -1,24 +1,5 @@
 const projects = [
     {
-        name: 'Keeper App',
-        description: 'A note taking app built with React with all the CRUD operations. You can create, read, update and delete any note as per your choice.',
-        // subtitle: 'Project Subtitle',
-        pic: '/keeperApp.png',
-        tech: ['React', 'Material UI'],
-        links: [
-            {
-                label: 'Website',
-                icon: 'link',
-                url: 'https://rahul5430.github.io/keeper-app//',
-            },
-            {
-                label: 'Github',
-                icon: 'github',
-                url: 'https://github.com/Rahul5430/keeper-app',
-            },
-        ],
-    },
-    {
         name: 'To Do List',
         description: 'A full stack to-do list built with Express and Node.js with all the CRUD operations. The use of MongoDB as the database ensures proper storage of your todos. You can create, read, update and delete any todo as per your choice.',
         // subtitle: 'Project Subtitle',
@@ -34,6 +15,25 @@ const projects = [
                 label: 'Github',
                 icon: 'github',
                 url: 'https://github.com/Rahul5430/to-do-list',
+            },
+        ],
+    },
+    {
+        name: 'Keeper App',
+        description: 'A note taking app built with React with all the CRUD operations. You can create, read, update and delete any note as per your choice.',
+        // subtitle: 'Project Subtitle',
+        pic: '/keeperApp.png',
+        tech: ['React', 'Material UI'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: 'https://rahul5430.github.io/keeper-app//',
+            },
+            {
+                label: 'Github',
+                icon: 'github',
+                url: 'https://github.com/Rahul5430/keeper-app',
             },
         ],
     },
