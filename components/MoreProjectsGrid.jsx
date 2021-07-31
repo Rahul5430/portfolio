@@ -72,7 +72,7 @@ const ProjectCard = ({ name, description, links, tech }) => {
                     marginLeft="10px"
                     />
                 </Grid>
-                <Grid container item xs={6} justify="flex-end">
+                <Grid container item xs={6} justifyContent="flex-end">
                     <LinkIconBar links={links} mr="24px" />
                 </Grid>
             </Grid>
