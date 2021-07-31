@@ -1,5 +1,24 @@
 const projects = [
     {
+        name: 'Option Strategy Builder',
+        description: "The option strategy builder allows you to construct different option and future products. Option strategies are the simultaneous, and often mixed, buying or selling of one or more options that differ in one or more of the options' variables.",
+        // subtitle: 'Project Subtitle',
+        pic: '/optionStrategyBuilder.png',
+        tech: ['AngularJs', 'Flask'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: 'https://www.indianstreetbets.co/options/',
+            },
+            // {
+            //     label: 'Github',
+            //     icon: 'github',
+            //     url: 'https://github.com/Rahul5430/to-do-list',
+            // },
+        ],
+    },
+    {
         name: 'To Do List',
         description: 'A full stack to-do list built with Express and Node.js with all the CRUD operations. The use of MongoDB as the database ensures proper storage of your todos. You can create, read, update and delete any todo as per your choice.',
         // subtitle: 'Project Subtitle',
