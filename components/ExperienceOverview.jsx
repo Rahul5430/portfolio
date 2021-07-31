@@ -31,7 +31,7 @@ const ExperienceButtons = ({ expIndex, setIndex }) => (
 		container
 		item
 		spacing={2}
-		justify='center'
+		justifyContent='center'
 		style={{ margin: 'auto' }}
 	>
 		{jobs.map((job, index) => (
@@ -124,7 +124,7 @@ export default function ExperienceOverview() {
 				sm={6}
 				md={2}
 				alignItems='center'
-				justify='flex-start'
+				justifyContent='flex-start'
 				style={{
 					marginTop: '24px',
 					marginBottom: '24px',

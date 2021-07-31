@@ -60,10 +60,82 @@ const projects = [
 
 export const extraProjects = [
     {
-        name: '',
-        description: '',
-        pic: '',
-        tech: ['', ''],
+        name: 'Project 1',
+        type: 'Type 1',
+        description: 'Description 1',
+        tech: ['Tech-1', 'Tech-2'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: '',
+            },
+            {
+                label: 'Github',
+                icon: 'github',
+                url: '',
+            },
+        ],
+    },
+    {
+        name: 'Project 2',
+        type: 'Type 2',
+        description: 'Description 2',
+        tech: ['Tech-1', 'Tech-2'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: '',
+            },
+            {
+                label: 'Github',
+                icon: 'github',
+                url: '',
+            },
+        ],
+    },
+    {
+        name: 'Project 3',
+        type: 'Type 3',
+        description: 'Description 3',
+        tech: ['Tech-1', 'Tech-2'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: '',
+            },
+            {
+                label: 'Github',
+                icon: 'github',
+                url: '',
+            },
+        ],
+    },
+    {
+        name: 'Project 4',
+        type: 'Type 4',
+        description: 'Description 4',
+        tech: ['Tech-1', 'Tech-2'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: '',
+            },
+            {
+                label: 'Github',
+                icon: 'github',
+                url: '',
+            },
+        ],
+    },
+    {
+        name: 'Project 5',
+        type: 'Type 5',
+        description: 'Description 5',
+        tech: ['Tech-1', 'Tech-2'],
         links: [
             {
                 label: 'Website',

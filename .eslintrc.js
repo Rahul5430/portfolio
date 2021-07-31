@@ -37,7 +37,7 @@ module.exports = {
 				singleQuote: true,
 				tabWidth: 4,
 				useTabs: true,
-        quoteProps: as-needed,
+		        quoteProps: as-needed,
 			},
 		],
 	},

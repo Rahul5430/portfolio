@@ -48,7 +48,7 @@ const ProjectContent = ({alternate, name, subtitle, description, pic, tech, link
                     description={description}
                     links={links}
                 />
-                <Grid container direction="row" justify="center" spacing={2}>
+                <Grid container direction="row" justifyContent="center" spacing={2}>
                     <Tech tech={tech} />
                 </Grid>
             </>
@@ -94,7 +94,7 @@ export default function ProjectsOverview() {
 
     return (
         <Flex pt={12}>
-            <Grid container direction="column" justify="center">
+            <Grid container direction="column" justifyContent="center">
                 {projects.map((project, index) => (
                     <Project 
                         key={project.name}
