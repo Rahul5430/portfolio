@@ -29,7 +29,7 @@ const SiteHead = ({ title }) => (
       property="og:description"
       content="Rahul Sharma's personal portfolio"
     />
-    <meta property="og:image" content="/white.png" />
+    <meta property="og:image" content="/black.png" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://rahulsharma.vercel.app/" />
     <meta
@@ -40,7 +40,7 @@ const SiteHead = ({ title }) => (
       property="twitter:description"
       content="Rahul Sharma's personal portfolio"
     />
-    <meta property="twitter:image" content="/white.png" />
+    <meta property="twitter:image" content="/black.png" />
     <script
       async
       defer
