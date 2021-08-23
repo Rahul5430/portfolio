@@ -43,6 +43,7 @@ const Bio = ({ secondary }) => (
 const HeadShot = () => (
     <GridItem>
         <Image
+            boxSize="320px"
             alt="Rahul Sharma"
             src="/me.jpg"
             m="auto"
