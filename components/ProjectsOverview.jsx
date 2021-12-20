@@ -8,7 +8,7 @@ import { colors } from '../theme';
 import LinkIconBar from './LinkIconBar';
 import Tech from './Tech';
 
-const Card = ({ name, subtitle, description, links }) => {
+const Card = ({ name, subtitle, description, links, shouldAlternate }) => {
     const bg = useColorModeValue(colors.bg.light, colors.bg.dark);
 
     return (
@@ -24,13 +24,13 @@ const Card = ({ name, subtitle, description, links }) => {
             w="75%"
             textAlign="start"
         >
-            <Heading as="h1" m={2} p={2} pt={6}>
+            <Heading as="h1" m={2} p={2} pt={shouldAlternate ? 6 : null}>
                 {name}
             </Heading>
-            <Text hidden={!subtitle} size="sm" as="strong" m={2} p={2} pb={6}>
+            <Text hidden={!subtitle} size="sm" as="strong" m={2} p={2} pb={shouldAlternate ? 6 : null}>
                 {subtitle}
             </Text>
-            <Text m={2} p={2} pb={6}>
+            <Text m={2} p={2} pb={shouldAlternate ? 6 : null}>
                 {description}
             </Text>
             <LinkIconBar links={links} float="right" mt={0} mr={4} mb={4} />
@@ -38,7 +38,7 @@ const Card = ({ name, subtitle, description, links }) => {
     );
 };
 
-const ProjectContent = ({alternate, name, subtitle, description, pic, tech, links}) => {
+const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description, pic, tech, links}) => {
     if (alternate) {
         return (
             <>
@@ -47,6 +47,7 @@ const ProjectContent = ({alternate, name, subtitle, description, pic, tech, link
                     subtitle={subtitle}
                     description={description}
                     links={links}
+                    shouldAlternate={shouldAlternate}
                 />
                 <Grid container direction="row" justifyContent="center" spacing={2}>
                     <Tech tech={tech} />
@@ -57,6 +58,7 @@ const ProjectContent = ({alternate, name, subtitle, description, pic, tech, link
 
     return (
         <Image 
+            borderRadius={'3px'}
             m="auto"
             w="85%"
             p="auto"
@@ -72,16 +74,18 @@ const ProjectContent = ({alternate, name, subtitle, description, pic, tech, link
 
 const Project = ({ index, shouldAlternate, ...props }) => (
     <Fade>
-        <Grid container direction="row" style={{ height: "70vh" }}>
+        <Grid container direction="row" style={{ height: shouldAlternate ? '70vh' : null, marginBottom: '2vh' }}>
             <Grid container item xs={12} sm={6}>
                 <ProjectContent 
                     alternate={shouldAlternate ? index % 2 === 0 : false}
+                    shouldAlternate={shouldAlternate}
                     {...props}
                 />
             </Grid>
             <Grid container item xs={12} sm={6}>
                 <ProjectContent 
                     alternate={shouldAlternate ? index % 2 === 1 : true}
+                    shouldAlternate={shouldAlternate}
                     {...props}
                 />
             </Grid>
