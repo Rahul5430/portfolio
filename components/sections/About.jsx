@@ -8,7 +8,7 @@ const Bio = ({ secondary }) => (
     <GridItem>
         <VStack m="auto" w="75%" spacing="12px" pt="5%">
             <Text>
-                Hi, I&apos;m Rahul! I am a first year student pursuing my Bachelors in{" "}
+                Hi, I&apos;m Rahul! I am a second year student pursuing my Bachelors in{" "}
                 <strong style={{color: secondary}}>
                     Electronics &amp; Communication Engineering
                 </strong>{" "}
