@@ -1,0 +1,27 @@
+{
+    "name": "Rahul Sharma - Full Stack Developer",
+    "short_name": "Portfolio",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "types": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "types": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "types": "image/png"
+        }
+    ],
+    "theme_color": "#252934",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

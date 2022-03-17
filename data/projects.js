@@ -1,23 +1,24 @@
 const projects = [
-    // {
-    //     name: 'Stock Watchlist',
-    //     description: "An ad-free open source stock watchlist application for stocks (NSE & BSE), cryptocurrencies, options, and indexes built with React Native.",
-    //     // subtitle: 'Project Subtitle',
-    //     pic: '/stockWatchlist.png',
-    //     tech: ['React Native'],
-    //     links: [
-    //         {
-    //             label: 'Website',
-    //             icon: 'link',
-    //             url: 'https://drive.google.com/file/d/1_zmsGgwEhXBAJoIsKQH5Z4XQKzbQBisn/view?usp=sharing',
-    //         },
-    //         {
-    //             label: 'Github',
-    //             icon: 'github',
-    //             url: 'https://github.com/PEC-CSS/Stock-Watchlist',
-    //         },
-    //     ],
-    // },
+    {
+        name: 'Stock Watchlist',
+        description: "An ad-free open source stock watchlist application for stocks (NSE & BSE), cryptocurrencies, options, and indexes built with React Native.",
+        // subtitle: 'Project Subtitle',
+        pic: '/stockWatchlist.png',
+        tech: ['React Native'],
+        links: [
+            {
+                label: 'Website',
+                icon: 'link',
+                url: 'https://drive.google.com/file/d/1_zmsGgwEhXBAJoIsKQH5Z4XQKzbQBisn/view?usp=sharing',
+            },
+            {
+                label: 'Github',
+                icon: 'github',
+                url: 'https://github.com/PEC-CSS/Stock-Watchlist',
+            },
+        ],
+    },
+    
     {
         name: 'Option Strategy Builder',
         description: "The option strategy builder allows you to construct different option and future products. Option strategies are the simultaneous, and often mixed, buying or selling of one or more options that differ in one or more of the options' variables.",

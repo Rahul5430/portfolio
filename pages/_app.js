@@ -16,7 +16,7 @@ const SiteHead = ({ title }) => (
     <meta name="title" content="Rahul Sharma - Full Stack Developer" />
     <meta name="description" content="Rahul Sharma - Portfolio" />
     <meta name="author" content="Rahul Sharma" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
@@ -42,7 +42,7 @@ const SiteHead = ({ title }) => (
       property="twitter:description"
       content="Rahul Sharma's personal portfolio"
     />
-    <meta property="twitter:image" content="https://res.cloudinary.com/rahulsharma/image/upload/v1627928959/logo_okieap.png" />
+    <meta property="twitter:image" content="https://res.cloudinary.com/rahulsharma/image/upload/v1627928959/logo_okieap.png" /> */}
     <script
       async
       defer
