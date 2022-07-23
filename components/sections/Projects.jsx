@@ -3,7 +3,7 @@ import React from 'react';
 import ProjectsOverview from '../ProjectsOverview';
 import SectionContainer from '../SectionContainer';
 
-export default function MoreProjects() {
+export default function MoreProjects({ imageProps }) {
     return (
         <SectionContainer
             id='projects'
@@ -11,7 +11,7 @@ export default function MoreProjects() {
             headerText='Featured Projects'
             useHeaderStyle
         >
-            <ProjectsOverview />
+            <ProjectsOverview imageProps={imageProps} />
         </SectionContainer>
     );
 }

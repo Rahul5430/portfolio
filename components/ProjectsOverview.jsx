@@ -1,5 +1,6 @@
-import { Box, Flex, Heading, Image, Text, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
 import { Grid } from '@material-ui/core';
+import Image from 'next/image';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
@@ -38,7 +39,7 @@ const Card = ({ name, subtitle, description, links, shouldAlternate }) => {
     );
 };
 
-const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description, pic, tech, links}) => {
+const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description, pic, tech, links, imageProps}) => {
     if (alternate) {
         return (
             <>
@@ -57,28 +58,40 @@ const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description
     }
 
     return (
-        <Image 
-            borderRadius={'3px'}
-            m="auto"
-            w="85%"
-            p="auto"
-            src={pic}
-            alt={`${name} picture`}
-            className="image"
-            onClick={() => {
-                window.open(links[0].url);
+        <div
+            className='image'
+            style={{ 
+                margin: 'auto',
+                borderRadius: '3px',
+                width: '85%',
+                // height: '246px',
             }}
-        />
+        >
+            <Image 
+                borderRadius={'3px'}
+                w="85%"
+                src={pic}
+                alt={`${name} picture`}
+				style={{ margin: 'auto' }}
+				placeholder='blur'
+                {...imageProps}
+                layout='responsive'
+                onClick={() => {
+                    window.open(links[0].url);
+                }}
+            />
+        </div>
     );
 };
 
-const Project = ({ index, shouldAlternate, ...props }) => (
+const Project = ({ index, shouldAlternate, imageProps, ...props }) => (
     <Fade>
         <Grid container direction="row" style={{ height: shouldAlternate ? '70vh' : null, marginBottom: '2vh' }}>
             <Grid container item xs={12} sm={6}>
                 <ProjectContent 
                     alternate={shouldAlternate ? index % 2 === 0 : false}
                     shouldAlternate={shouldAlternate}
+                    imageProps={imageProps}
                     {...props}
                 />
             </Grid>
@@ -86,6 +99,7 @@ const Project = ({ index, shouldAlternate, ...props }) => (
                 <ProjectContent 
                     alternate={shouldAlternate ? index % 2 === 1 : true}
                     shouldAlternate={shouldAlternate}
+                    imageProps={imageProps}
                     {...props}
                 />
             </Grid>
@@ -93,7 +107,7 @@ const Project = ({ index, shouldAlternate, ...props }) => (
     </Fade>
 );
 
-export default function ProjectsOverview() {
+export default function ProjectsOverview({ imageProps }) {
     const shouldAlternate = useBreakpointValue({base: false, md: true});
 
     return (
@@ -104,6 +118,7 @@ export default function ProjectsOverview() {
                         key={project.name}
                         index={index}
                         shouldAlternate={shouldAlternate}
+                        imageProps={imageProps[index]}
                         {...project}
                     />
                 ))}

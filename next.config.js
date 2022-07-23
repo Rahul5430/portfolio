@@ -1,10 +1,13 @@
-const withPWA = require("next-pwa");
+const withPWA = require('next-pwa');
+const { withPlaiceholder } = require('@plaiceholder/next');
 
-module.exports = withPWA({
-  pwa: {
-    dest: "public",
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-});
+module.exports = withPWA(
+	withPlaiceholder({
+		pwa: {
+			dest: 'public',
+		},
+		eslint: {
+			ignoreDuringBuilds: true,
+		},
+	})
+);
