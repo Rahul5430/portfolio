@@ -81,7 +81,8 @@ const NavButtons = ({ size, onClose }) => {
             ) : (
                 <ScrollLink
                     to={btn.label.toLowerCase()}
-                    href={btn.href}
+                    // href={btn.href}
+                    href={'/'}
                     spy
                     smooth
                     offset={-70}

@@ -37,6 +37,7 @@ class MyDocument extends Document {
           <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#252934' />
           <link rel='shortcut icon' href='/favicon.ico' />
           {/* <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' /> */}
+          <link rel='canonical' href='https://rahulsharma.vercel.app/' />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://rahulsharma.vercel.app/" />

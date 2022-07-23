@@ -29,6 +29,7 @@ export default function Landing() {
             <Link
                 activeClass="active"
                 to="about"
+                href='/'
                 spy
                 smooth
                 offset={-70}
