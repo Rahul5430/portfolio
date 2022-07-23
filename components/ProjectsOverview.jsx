@@ -64,7 +64,7 @@ const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description
                 margin: 'auto',
                 borderRadius: '3px',
                 width: '85%',
-                // height: '246px',
+				overflow: 'hidden',
             }}
         >
             <Image 

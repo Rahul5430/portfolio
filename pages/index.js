@@ -8,7 +8,7 @@ import MoreProjects from '../components/sections/MoreProjects';
 import Projects from '../components/sections/Projects';
 import styles from '../styles/Home.module.css';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
 	const data = await Promise.all([
 		getPlaiceholder('/me.jpg'),
 		getPlaiceholder('/stockWatchlist.png'),

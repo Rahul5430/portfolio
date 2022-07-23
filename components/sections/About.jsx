@@ -50,7 +50,13 @@ const HeadShot = ({ imageProps }) => (
 	<GridItem>
 		<div
 			className='image'
-			style={{ margin: 'auto', width: '320px', height: '320px' }}
+			style={{
+				margin: 'auto',
+				width: '320px',
+				height: '320px',
+				borderRadius: '3px',
+				overflow: 'hidden',
+			}}
 		>
 			<Image
 				alt='Rahul Sharma'
