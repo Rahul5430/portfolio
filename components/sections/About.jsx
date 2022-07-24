@@ -66,6 +66,7 @@ const HeadShot = ({ imageProps }) => (
 				// style={{ margin: 'auto' }}
 				placeholder='blur'
 				{...imageProps}
+				layout='responsive'
 				onClick={() => {
 					window.open('https://www.linkedin.com/in/rahul5430/');
 				}}
