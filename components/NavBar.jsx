@@ -54,7 +54,7 @@ const Logo = () => {
 					height={431}
                     layout='responsive'
 					onClick={scroll.scrollToTop}
-					style={{ padding: 10 }}
+					// style={{ padding: 10 }}
 				/>
 			</div>
 		</Box>

@@ -70,7 +70,7 @@ const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description
             <Image 
                 src={pic}
                 alt={`${name} picture`}
-				style={{ margin: 'auto' }}
+				// style={{ margin: 'auto' }}
 				placeholder='blur'
                 {...imageProps}
                 layout='responsive'

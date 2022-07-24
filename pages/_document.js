@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
+import { getCsp } from '../utils/csp';
 
 import { GA_TRACKING_ID } from '../lib/gtag'
 
@@ -25,6 +26,8 @@ class MyDocument extends Document {
           <meta name='msapplication-TileColor' content='#252934' />
           <meta name='msapplication-tap-highlight' content='no' />
           <meta name='theme-color' content='#252934' />
+          {/* <meta name="referrer" content={'strict-origin'} />
+          <meta httpEquiv="Content-Security-Policy" content={getCsp(NextScript.getInlineScriptSource(this.props))} /> */}
 
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
           <link rel='apple-touch-icon' sizes='152x152' href='/apple-touch-icon.png' />

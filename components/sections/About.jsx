@@ -63,7 +63,7 @@ const HeadShot = ({ imageProps }) => (
 				src='/me.jpg'
 				// width={320}
 				// height={320}
-				style={{ margin: 'auto' }}
+				// style={{ margin: 'auto' }}
 				placeholder='blur'
 				{...imageProps}
 				onClick={() => {
