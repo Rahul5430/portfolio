@@ -16,45 +16,13 @@ const SiteHead = ({ title }) => (
     <meta name="title" content="Rahul Sharma - Full Stack Developer" />
     <meta name="description" content="Rahul Sharma - Portfolio" />
     <meta name="author" content="Rahul Sharma" />
-    {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#252934" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rahulsharma.vercel.app/" />
-    <meta
-      property="og:title"
-      content="Rahul Sharma - Full Stack Developer"
-    />
-    <meta
-      property="og:description"
-      content="Rahul Sharma's personal portfolio"
-    />
-    <meta property="og:image" content="https://res.cloudinary.com/rahulsharma/image/upload/v1627928959/logo_okieap.png" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://rahulsharma.vercel.app/" />
-    <meta
-      property="twitter:title"
-      content="Rahul Sharma - Full Stack Developer"
-    />
-    <meta
-      property="twitter:description"
-      content="Rahul Sharma's personal portfolio"
-    />
-    <meta property="twitter:image" content="https://res.cloudinary.com/rahulsharma/image/upload/v1627928959/logo_okieap.png" /> */}
-    <script
-      async
-      defer
-      src="https://scripts.simpleanalyticscdn.com/latest.js"
-    />
-    <noscript>
+    {/* <noscript>
       <img
         src="https://queue.simpleanalyticscdn.com/noscript.gif"
         alt=""
         referrerPolicy="no-referrer-when-downgrade"
       />
-    </noscript>
+    </noscript> */}
   </Head>
 );
 
