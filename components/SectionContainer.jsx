@@ -11,7 +11,7 @@ export default function SectionContainer({
     useHeaderStyle = false,
     ...props
 }) {
-    const color = useColorModeValue('secondary.light', 'secondary.dark');
+    const color = useColorModeValue('tertiary.dark', 'secondary.dark');
 
     return (
         <div className={styles.container} {...props}>

@@ -17,7 +17,11 @@ import jobs from '../data/jobs';
 import { colors } from '../theme';
 
 const ExperienceSelect = ({ expIndex, setIndex }) => (
-	<Select value={expIndex} onChange={(e) => setIndex(e.target.value)}>
+	<Select
+		aria-label='Experience'
+		value={expIndex}
+		onChange={(e) => setIndex(e.target.value)}
+	>
 		{jobs.map((job, index) => (
 			<option key={`${job.workplace}-select-option`} value={index}>
 				{job.workplace}

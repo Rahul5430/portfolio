@@ -16,6 +16,7 @@ const SiteHead = ({ title }) => (
     <meta name="title" content="Rahul Sharma - Full Stack Developer" />
     <meta name="description" content="Rahul Sharma - Portfolio" />
     <meta name="author" content="Rahul Sharma" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     {/* <noscript>
       <img
         src="https://queue.simpleanalyticscdn.com/noscript.gif"
