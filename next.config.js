@@ -31,6 +31,9 @@ module.exports = withPWA(
 			runtimeCaching,
 			buildExcludes: [/middleware-manifest.json$/],
 		},
+		images: {
+			formats: ['image/avif', 'image/webp'],
+		},
 		eslint: {
 			ignoreDuringBuilds: true,
 		},
