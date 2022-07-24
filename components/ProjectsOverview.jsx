@@ -68,8 +68,6 @@ const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description
             }}
         >
             <Image 
-                borderRadius={'3px'}
-                w="85%"
                 src={pic}
                 alt={`${name} picture`}
 				style={{ margin: 'auto' }}

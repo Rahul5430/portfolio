@@ -61,8 +61,8 @@ const HeadShot = ({ imageProps }) => (
 			<Image
 				alt='Rahul Sharma'
 				src='/me.jpg'
-				width={320}
-				height={320}
+				// width={320}
+				// height={320}
 				style={{ margin: 'auto' }}
 				placeholder='blur'
 				{...imageProps}
