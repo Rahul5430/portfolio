@@ -36,6 +36,8 @@ export default function Contact() {
                     href="mailto:rahul2702sharma@gmail.com"
                     m="auto"
                     mt={6}
+                    variant='outline'
+                    colorScheme={'blue'}
                 >
                     Send Email
                 </Button>
