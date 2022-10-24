@@ -39,7 +39,7 @@ export const getStaticProps = async () => {
 
 export default function Home({ imageData }) {
 	const childRefs = {
-		LandingRef: useRef(),
+		// LandingRef: useRef(),
 		AboutRef: useRef(),
 		ExperienceRef: useRef(),
 		ProjectsRef: useRef(),
@@ -47,7 +47,7 @@ export default function Home({ imageData }) {
 		ContactRef: useRef(),
 	};
 	const childRefValues = {
-		LandingRef: useOnScreen(childRefs.LandingRef),
+		// LandingRef: useOnScreen(childRefs.LandingRef),
 		AboutRef: useOnScreen(childRefs.AboutRef),
 		ExperienceRef: useOnScreen(childRefs.ExperienceRef),
 		ProjectsRef: useOnScreen(childRefs.ProjectsRef),
@@ -55,7 +55,7 @@ export default function Home({ imageData }) {
 		ContactRef: useOnScreen(childRefs.ContactRef),
 	};
 	const [isChildRef, setIsChildRef] = useState({
-		LandingRef: false,
+		// LandingRef: false,
 		AboutRef: false,
 		ExperienceRef: false,
 		ProjectsRef: false,
@@ -63,14 +63,14 @@ export default function Home({ imageData }) {
 		ContactRef: false,
 	});
 
-	useEffect(() => {
-		if (!isChildRef.LandingRef) {
-			setIsChildRef({
-				...isChildRef,
-				LandingRef: childRefValues.LandingRef,
-			});
-		}
-	}, [childRefValues.LandingRef]);
+	// useEffect(() => {
+	// 	if (!isChildRef.LandingRef) {
+	// 		setIsChildRef({
+	// 			...isChildRef,
+	// 			LandingRef: childRefValues.LandingRef,
+	// 		});
+	// 	}
+	// }, [childRefValues.LandingRef]);
 
 	useEffect(() => {
 		if (!isChildRef.AboutRef) {
@@ -116,9 +116,10 @@ export default function Home({ imageData }) {
 
 	return (
 		<div className={styles.container}>
-			<div ref={childRefs.LandingRef}>
+			{/* <div ref={childRefs.LandingRef}>
 				{isChildRef.LandingRef && <Landing />}
-			</div>
+			</div> */}
+			<Landing />
 			<div ref={childRefs.AboutRef}>
 				{isChildRef.AboutRef && <About imageProps={imageData[0]} />}
 			</div>
