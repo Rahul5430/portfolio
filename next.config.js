@@ -1,6 +1,11 @@
-const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
+const withPWA = require('next-pwa')({
+	dest: 'public',
+});
+// const runtimeCaching = require('next-pwa/cache');
 const { withPlaiceholder } = require('@plaiceholder/next');
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
 
 const headers = async () => {
 	return [
@@ -24,13 +29,13 @@ const headers = async () => {
 	];
 };
 
-module.exports = withPWA(
+module.exports = withBundleAnalyzer(withPWA(
 	withPlaiceholder({
-		pwa: {
-			dest: 'public',
-			runtimeCaching,
-			buildExcludes: [/middleware-manifest.json$/],
-		},
+		// pwa: {
+		// 	dest: 'public',
+		// 	runtimeCaching,
+		// 	buildExcludes: [/middleware-manifest.json$/],
+		// },
 		images: {
 			formats: ['image/avif', 'image/webp'],
 		},
@@ -39,4 +44,4 @@ module.exports = withPWA(
 		},
 		headers,
 	})
-);
+));
