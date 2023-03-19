@@ -44,6 +44,7 @@ const ExperienceButtons = ({ expIndex, setIndex }) => (
 					isActive={expIndex === index}
 					isFullWidth
 					onClick={() => setIndex(index)}
+					whiteSpace={'normal'}
 				>
 					{job.workplace}
 				</Button>
