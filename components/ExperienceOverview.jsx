@@ -42,7 +42,7 @@ const ExperienceButtons = ({ expIndex, setIndex }) => (
 			<Grid container item key={`${job.workplace}-btn`}>
 				<Button
 					isActive={expIndex === index}
-					isFullWidth
+					width="full"
 					onClick={() => setIndex(index)}
 					whiteSpace={'normal'}
 				>

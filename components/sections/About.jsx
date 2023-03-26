@@ -52,8 +52,8 @@ const HeadShot = ({ imageProps }) => (
 			className='image'
 			style={{
 				margin: 'auto',
-				width: '320px',
-				height: '320px',
+				maxWidth: '320px',
+				maxHeight: '320px',
 				borderRadius: '3px',
 				overflow: 'hidden',
 			}}
@@ -66,7 +66,8 @@ const HeadShot = ({ imageProps }) => (
 				// style={{ margin: 'auto' }}
 				placeholder='blur'
 				{...imageProps}
-				layout='responsive'
+				sizes="100vw"
+				style={{ width: '100%', height: 'auto' }}
 				onClick={() => {
 					window.open('https://www.linkedin.com/in/rahul5430/');
 				}}

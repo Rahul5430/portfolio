@@ -1,19 +1,12 @@
 import { getPlaiceholder } from 'plaiceholder';
 import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
-// import About from '../components/sections/About';
-// import Contact from '../components/sections/Contact';
-// import Experience from '../components/sections/Experience';
-const Contact = dynamic(() => import('../components/sections/Contact'));
-const Experience = dynamic(() => import('../components/sections/Experience'));
-const MoreProjects = dynamic(() => import('../components/sections/MoreProjects'));
-const Projects = dynamic(() => import('../components/sections/Projects'));
-const About = dynamic(() => import('../components/sections/About'));
-// const Landing = dynamic(() => import('../components/sections/Landing'));
 import Landing from '../components/sections/Landing';
-// import Landing from '../components/sections/Landing';
-// import MoreProjects from '../components/sections/MoreProjects';
-// import Projects from '../components/sections/Projects';
+const About = dynamic(() => import('../components/sections/About'));
+const Experience = dynamic(() => import('../components/sections/Experience'));
+const Projects = dynamic(() => import('../components/sections/Projects'));
+const MoreProjects = dynamic(() => import('../components/sections/MoreProjects'));
+const Contact = dynamic(() => import('../components/sections/Contact'));
 import styles from '../styles/Home.module.css';
 import useOnScreen from '../hooks/useOnScreen';
 
@@ -39,7 +32,6 @@ export const getStaticProps = async () => {
 
 export default function Home({ imageData }) {
 	const childRefs = {
-		// LandingRef: useRef(),
 		AboutRef: useRef(),
 		ExperienceRef: useRef(),
 		ProjectsRef: useRef(),
@@ -47,7 +39,6 @@ export default function Home({ imageData }) {
 		ContactRef: useRef(),
 	};
 	const childRefValues = {
-		// LandingRef: useOnScreen(childRefs.LandingRef),
 		AboutRef: useOnScreen(childRefs.AboutRef),
 		ExperienceRef: useOnScreen(childRefs.ExperienceRef),
 		ProjectsRef: useOnScreen(childRefs.ProjectsRef),
@@ -55,22 +46,12 @@ export default function Home({ imageData }) {
 		ContactRef: useOnScreen(childRefs.ContactRef),
 	};
 	const [isChildRef, setIsChildRef] = useState({
-		// LandingRef: false,
 		AboutRef: false,
 		ExperienceRef: false,
 		ProjectsRef: false,
 		MoreProjectsRef: false,
 		ContactRef: false,
 	});
-
-	// useEffect(() => {
-	// 	if (!isChildRef.LandingRef) {
-	// 		setIsChildRef({
-	// 			...isChildRef,
-	// 			LandingRef: childRefValues.LandingRef,
-	// 		});
-	// 	}
-	// }, [childRefValues.LandingRef]);
 
 	useEffect(() => {
 		if (!isChildRef.AboutRef) {

@@ -52,7 +52,8 @@ const Logo = () => {
 					src={logo}
 					width={702}
 					height={431}
-                    layout='responsive'
+					sizes="100vw"
+					style={{ width: '100%', height: 'auto' }}
 					onClick={scroll.scrollToTop}
 					// style={{ padding: 10 }}
 				/>

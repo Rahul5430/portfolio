@@ -73,7 +73,8 @@ const ProjectContent = ({alternate, shouldAlternate, name, subtitle, description
 				// style={{ margin: 'auto' }}
 				placeholder='blur'
                 {...imageProps}
-                layout='responsive'
+				sizes="100vw"
+				style={{ width: '100%', height: 'auto' }}
                 onClick={() => {
                     window.open(links[0].url);
                 }}
