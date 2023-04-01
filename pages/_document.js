@@ -55,6 +55,8 @@ class MyDocument extends Document {
           <meta property="og:description" content="Rahul Sharma's personal portfolio" />
           <meta property="og:image" content="https://res.cloudinary.com/rahulsharma/image/upload/v1627928959/logo_okieap.png" />
           <meta property='og:site_name' content='Rahul Sharma - Full Stack Developer' />
+
+          <meta name="keywords" content="pwoc, 2k23, pec, winter, developer, code, pec winter of code, pwoc 2023, Rahul, Sharma, Full Stack Developer, nextjs, portfolio, chakra-ui" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
